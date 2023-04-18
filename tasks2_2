@@ -1,0 +1,52 @@
+/* программа 1
+double x = Convert.Todouble32(Console.ReadLine());
+double y = Convert.ToInt3232(Console.ReadLine());
+Console.WriteLine(Math.Atan(y/x)*180/Math.PI);
+Console.WriteLine(x = Convert.ToString(x));*/
+/*программа 2
+double x0 = Convert.ToInt32(Console.ReadLine());
+double y0 = Convert.ToInt32(Console.ReadLine());
+double xn = Convert.ToInt32(Console.ReadLine());
+double yn = Convert.ToInt32(Console.ReadLine());
+double xk = Convert.ToInt32(Console.ReadLine());
+double yk = Convert.ToInt32(Console.ReadLine());
+if (xn == x0 & yn == y0)
+{
+    Console.WriteLine("Начало дуги совпадает с центром окружности");
+}
+else if (xk == x0 & yk == y0)
+{
+    Console.WriteLine("Конец дуги совпадает с центром окружности");
+}
+if (xn > x0 & yn > y0)
+{
+    Console.WriteLine("Начало дуги находится в первой четверти");
+}
+else if (xn < x0 & yn > y0)
+{
+    Console.WriteLine("Начало дуги находится во второй четверти");
+}
+else if (xn > x0 & yn < y0)
+{
+    Console.WriteLine("Начало дуги находится в третьей четверти");
+}
+else if (xn < x0 & yn < y0)
+{
+    Console.WriteLine("Начало дуги находится в четвертой четверти");
+}
+if (xk > x0 & yk > y0)
+{
+    Console.WriteLine("Конец дуги находится в первой четверти");
+}
+else if (xk < x0 & yk > y0)
+{
+    Console.WriteLine("Конец дуги находится во второй четверти");
+}
+else if (xk > x0 & yk < y0)
+{
+    Console.WriteLine("Конец дуги находится в третьей четверти");
+}
+else if (xk < x0 & yk < y0)
+{
+    Console.WriteLine("Конец дуги находится в четвертой четверти");
+}*/
