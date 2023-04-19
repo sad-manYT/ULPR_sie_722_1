@@ -1,0 +1,178 @@
+int y = Convert.ToInt32(Console.ReadLine());
+int d = 0;
+int p = 0;
+for (int i = 1; i < 13; i++)
+    {
+    switch (i)
+    {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            d = 31;
+            DateOnly newdate = new DateOnly(y, i, d);
+            //Console.WriteLine(newdate.DayOfWeek);
+            DayOfWeek day = newdate.DayOfWeek;
+            switch (day)
+            {
+                case DayOfWeek.Monday:
+                    d = d - 4;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Tuesday:
+                    d = d - 5;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Wednesday:
+                    d = d - 6;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Thursday:
+                    d = 31;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Friday:
+                    d = d - 1;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Saturday:
+                    d = d - 2;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Sunday:
+                    d = d - 3;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+
+            }
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            d = 30;
+            DateOnly newdate1 = new DateOnly(y, i, d);
+            //Console.WriteLine(newdate1.DayOfWeek);
+            DayOfWeek day1 = newdate1.DayOfWeek;
+            switch (day1)
+            {
+                case DayOfWeek.Monday:
+                    d = d - 4;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Tuesday:
+                    d = d - 5;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Wednesday:
+                    d = d - 6;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Thursday:
+                    d = 30;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Friday:
+                    d = d - 1;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Saturday:
+                    d = d - 2;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+                case DayOfWeek.Sunday:
+                    d = d - 3;
+                    Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                    break;
+
+            }
+            break;
+        case 2:
+            if ((y % 4 == 0) & !((y % 100 == 0) & (y % 400 != 0)))
+            {
+                p = 1;
+            }
+            if (p == 1)
+            {
+                d = 29;
+                DateOnly newdate2 = new DateOnly(y, i, d);
+                //Console.WriteLine(newdate2.DayOfWeek);
+                DayOfWeek day2 = newdate2.DayOfWeek;
+                switch (day2)
+                {
+                    case DayOfWeek.Monday:
+                        d = d - 4;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Tuesday:
+                        d = d - 5;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Wednesday:
+                        d = d - 6;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Thursday:
+                        d = 29;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Friday:
+                        d = d - 1;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Saturday:
+                        d = d - 2;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Sunday:
+                        d = d - 3;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                }
+                break;
+            }
+            else
+            {
+                d = 28;
+                DateOnly newdate3 = new DateOnly(y, i, d);
+                //Console.WriteLine(newdate3.DayOfWeek);
+                DayOfWeek day3 = newdate3.DayOfWeek;
+                switch (day3)
+                {
+                    case DayOfWeek.Monday:
+                        d = d - 4;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Tuesday:
+                        d = d - 5;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Wednesday:
+                        d = d - 6;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Thursday:
+                        d = 28;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Friday:
+                        d = d - 1;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Saturday:
+                        d = d - 2;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+                    case DayOfWeek.Sunday:
+                        d = d - 3;
+                        Console.WriteLine($"{d},{i},{y}, Последний четверг месяца");
+                        break;
+
+                }
+            }
+            break;
+        }
+    }
